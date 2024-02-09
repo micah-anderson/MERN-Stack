@@ -13,7 +13,7 @@ postsRouter
   });
 
 postsRouter
-  .route("/:id") // Rout '/:id'
+  .route("/:id") // Route '/:id' important to note that :id is just a placeholder (create it by adding  a ':' at the start) it's also just a variable that's value will change ...
   .get((req, res) => {
     res.send("one post"); // GET all posts
   })
@@ -25,6 +25,4 @@ postsRouter
   });
 
 
-
-
-export default usersRouter;
+export default postsRouter;
